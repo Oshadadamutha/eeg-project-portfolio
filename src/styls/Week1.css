@@ -1,0 +1,135 @@
+.week1-section {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+  }
+  
+  .week1-section h2 {
+    font-size: 1.8rem;
+    color: #1e3a8a;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    position: relative;
+    padding-bottom: 0.5rem;
+  }
+  
+  .week1-section h2:after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(to right, #3b82f6, #1e40af);
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 1px;
+  }
+  
+  .summary {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    text-align: justify;
+    color: #1f2937;
+  }
+  
+  .summary strong {
+    color: #1e40af;
+  }
+  
+  .table-caption {
+    font-weight: 600;
+    margin: 1.5rem 0 0.5rem;
+    color: #374151;
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  
+  .table-container {
+    overflow-x: auto;
+    margin: 1rem 0 2rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+    background-color: #fff;
+  }
+  
+  th, td {
+    padding: 0.75rem;
+    text-align: center;
+    border: 1px solid #e5e7eb;
+  }
+  
+  th {
+    background-color: #f3f4f6;
+    color: #1f2937;
+    font-weight: 600;
+  }
+  
+  thead {
+    background-color: #dbeafe;
+  }
+  
+  thead th {
+    background-color: #1e40af;
+    color: white;
+    font-weight: 600;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f9fafb;
+  }
+  
+  tbody tr:hover {
+    background-color: #eff6ff;
+  }
+  
+  tr:last-child {
+    font-weight: 600;
+    background-color: #f3f4f6;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .week1-section {
+      padding: 1rem;
+      margin: 1rem;
+    }
+    
+    .week1-section h2 {
+      font-size: 1.5rem;
+    }
+    
+    .summary {
+      font-size: 1rem;
+    }
+    
+    th, td {
+      padding: 0.5rem;
+      font-size: 0.85rem;
+    }
+    
+    .table-caption {
+      font-size: 1rem;
+    }
+  }
+  
+  /* Print-friendly styles */
+  @media print {
+    .week1-section {
+      box-shadow: none;
+      border: 1px solid #ddd;
+    }
+    
+    table {
+      page-break-inside: avoid;
+    }
+  }

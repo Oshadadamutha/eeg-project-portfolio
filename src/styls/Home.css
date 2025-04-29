@@ -1,0 +1,103 @@
+#home {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background: linear-gradient(to bottom, #f9fafb, #f3f4f6);
+}
+
+#home h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #111827;
+  animation: fadeIn 1s ease-in-out;
+}
+
+#home p {
+  font-size: 1.25rem;
+  color: #4b5563;
+  margin-bottom: 2rem;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+#home img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #e5e7eb;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+#home img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  border-color: #d1d5db;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Social media links if you want to add them */
+.social-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.social-links a {
+  color: #4b5563;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #2563eb;
+}
+
+/* Call to action button */
+.cta-button {
+  margin-top: 2rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background-color: #2563eb;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  #home h2 {
+    font-size: 2rem;
+  }
+  
+  #home p {
+    font-size: 1rem;
+  }
+  
+  #home img {
+    width: 150px;
+    height: 150px;
+  }
+}
