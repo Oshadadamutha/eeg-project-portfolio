@@ -6,14 +6,14 @@ import Week1 from './components/Week1';
 
 function App() {
   return (
-    <BrowserRouter basename="/eeg-project-portfolio/">
+    <dev>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path='/week1' element={<Week1 />} />
       </Routes>
-    </BrowserRouter>
+    </dev>
   );
 }
 
