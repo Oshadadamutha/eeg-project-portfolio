@@ -6,7 +6,7 @@ import Week1 from './components/Week1';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/eeg-project-portfolio/">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
